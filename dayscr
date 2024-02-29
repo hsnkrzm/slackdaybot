@@ -1,0 +1,13 @@
+import datetime
+
+# Başlangıç tarihini belirle
+start_date = datetime.datetime(2021, 4, 4)
+
+# Bugünkü tarihi al
+current_date = datetime.datetime.now()
+
+# Geçen gün sayısını hesapla
+days_passed = (current_date - start_date).days
+
+# Sonucu yazdır
+print("Bugün {}, {}. gün".format(current_date.strftime('%d %B %Y'), days_passed))
